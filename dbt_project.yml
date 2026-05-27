@@ -21,3 +21,6 @@ models:
   fabric_project:
     bronze:
       +materialized: table
+seeds:
+  fabric_project:      
+    +schema: bronze

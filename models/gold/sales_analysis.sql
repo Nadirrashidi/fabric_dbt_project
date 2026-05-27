@@ -17,8 +17,10 @@ dim_product as (
 
 dim_date as (
     select * from {{ ref('silver_dim_date') }}
+),
+dim_store_static as (
+    select * from {{ ref('silver_dim_store_static') }}
 )
-
 select
     -- 1. Sales Fact Data (Measures & IDs)
     f.sales_id,
@@ -54,3 +56,4 @@ from fact_sales f
 left join dim_customer c on f.customer_sk = c.customer_sk
 left join dim_product p on f.product_sk = p.product_sk
 left join dim_date d on f.date_sk = d.date_sk
+left join dim_store_static s on f.store_sk = s.store_sk
