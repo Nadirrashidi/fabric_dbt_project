@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: silver_dim_customer
+    description: "Cleaned and processed customer dimension table"
+    columns:
+      - name: customer_sk
+        description: "Primary key for customer dimension"
+        tests:
+          - unique
+          - not_null
+
+  - name: silver_dim_product
+    description: "Cleaned product dimension table with split quantities"
+    columns:
+      - name: product_sk
+        description: "Primary key for product dimension"
+        tests:
+          - unique
+          - not_null
+  - name : silver_dim_date
+    description: "Cleaned date dimension table"
+    columns:
+      - name: date_sk
+        description: "Primary key for date dimension"
+        tests:
+          - unique
+          - not_null
