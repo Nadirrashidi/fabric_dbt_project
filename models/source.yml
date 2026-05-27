@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: Source
+    schema: Source
+    tables:
+      - name: dim_customer
+      - name: dim_product
+      - name: dim_date
+      - name: dim_store
+      - name: fact_returns
+      - name: fact_sales

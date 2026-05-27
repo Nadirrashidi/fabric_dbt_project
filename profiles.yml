@@ -1,0 +1,10 @@
+fabric_project:
+  outputs:
+    dev:
+      type: fabric
+      driver: 'ODBC Driver 18 for SQL Server'
+      server: '23epkopltczezcxx6egx5mbf54-5cmtoljztobebiyuzv2fzo6yhu.datawarehouse.fabric.microsoft.com'
+      database: 'wh_nadir_project'
+      schema: dbo
+      authentication: CLI
+  target: dev
