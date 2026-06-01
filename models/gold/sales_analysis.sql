@@ -30,6 +30,7 @@ select
     f.discount_amount,
     f.net_amount,
     f.payment_method,
+    {{ generate_discount_tier('f.discount_amount') }} as discount_tier,
 
     -- 2. Centralized Customer Information
     c.customer_sk,
@@ -51,7 +52,8 @@ select
     d.year as sales_year,
     d.month_name as sales_month,
     d.day_of_week as sales_day_name
-
+  
+   
 from fact_sales f
 left join dim_customer c on f.customer_sk = c.customer_sk
 left join dim_product p on f.product_sk = p.product_sk
