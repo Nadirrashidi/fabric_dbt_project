@@ -10,6 +10,7 @@ with bronze_dim_customer as (
 )
 
 select 
+  {{ dbt_utils.generate_surrogate_key(['customer_id', 'city']) }} as customer_hash_key,
   cast(customer_sk as int) as customer_sk,
   upper(first_name) as first_name,
   upper(last_name) as last_name,

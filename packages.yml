@@ -1,0 +1,3 @@
+packages:
+  - package: dbt-labs/dbt_utils
+    version: 1.3.3  # Yeh dbt-utils ka production-ready version hai
