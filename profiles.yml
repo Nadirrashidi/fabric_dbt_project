@@ -1,5 +1,7 @@
 fabric_project:
+  target: dev
   outputs:
+    
     dev:
       type: fabric
       driver: 'ODBC Driver 18 for SQL Server'
@@ -7,4 +9,12 @@ fabric_project:
       database: 'wh_nadir_project'
       schema: dbo
       authentication: CLI
-  target: dev
+
+    
+    prod:
+      type: fabric
+      driver: 'ODBC Driver 18 for SQL Server'
+      server: '23epkopltczezcxx6egx5mbf54-zw7vvakmmixuzfhqpdcspoiz2q.datawarehouse.fabric.microsoft.com' # <-- Naya Prod Server Link
+      database: 'wh_nadir_project_Prod' 
+      schema: dbo
+      authentication: CLI

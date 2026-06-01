@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: Source
+    database: "{{ 'wh_nadir_project_Prod' if target.name == 'prod' else 'wh_nadir_project' }}"
     schema: Source
     tables:
       - name: dim_customer
