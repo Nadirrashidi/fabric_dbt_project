@@ -21,10 +21,8 @@
   "command": {
     "operation": "build",
     "arguments": {
-      "select": "",
       "exclude": "",
-      "threads": 4,
-      "selectorName": ""
+      "threads": 4
     }
   }
 }
