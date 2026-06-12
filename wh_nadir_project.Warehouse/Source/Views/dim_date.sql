@@ -1,0 +1,3 @@
+-- Auto Generated (Do not modify) 624430036BE5EB31F72F1484B85E4FE037F8E2884C217EDD040BF7E8CD0CFAD5
+CREATE VIEW Source.dim_date AS 
+SELECT * FROM lh_nadir_project.Source.dim_date;
