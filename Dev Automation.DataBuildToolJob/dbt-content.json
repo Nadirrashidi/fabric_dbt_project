@@ -1,11 +1,7 @@
 {
   "project": {
-    "projectType": "GitHub",
-    "branch": "main",
-    "folderPath": "dbt",
-    "externalReferences": {
-      "connection": "989ebc56-2114-40c6-92c5-d425be9467cf"
-    }
+    "projectType": "OneLake",
+    "folderPath": "dbt"
   },
   "profile": {
     "profileType": "DataWarehouse",
